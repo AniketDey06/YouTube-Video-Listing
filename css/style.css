@@ -1,0 +1,176 @@
+/* google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.githublink{
+    position:absolute ;
+    top: 15px;
+    right: 15px;
+}
+
+.githublink i{
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+    background-color: rgb(255, 255, 255);
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    background-image:  linear-gradient(#00000007 0.7000000000000001px, transparent 0.7000000000000001px), linear-gradient(to right, #00000024 0.7000000000000001px, #ffffff19 0.7000000000000001px);
+    background-size: 14px 14px;
+}
+
+.navbar {
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: black; */
+}
+
+/* From Uiverse.io by ErzenXz */
+.input {
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 45px;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid lightgrey;
+    outline: none;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+    box-shadow: 0px 0px 20px -18px;
+}
+
+.input:hover {
+    border: 2px solid rgb(0, 0, 0);
+    box-shadow: 0px 0px 20px -17px;
+}
+
+.input:active {
+    transform: scale(0.95);
+}
+
+.input:focus {
+    border: 2px solid rgb(0, 0, 0);
+}
+
+
+
+
+/* From Uiverse.io by akshat-patel28 */
+.videolistings{
+    margin: 20px 30px;
+    
+}
+
+.videobox{
+    grid-gap: 10px;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2px));
+    /* border: 2px solid rgb(255, 0, 0); */
+}
+
+.card {
+    max-width: 350px;
+    margin: 15px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--white); */
+    border-radius: 10px;
+    /* box-shadow: 0px 10px 12px rgba(0, 0, 0, 0.08),
+        -4px -4px 12px rgba(0, 0, 0, 0.08); */
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
+    overflow: hidden;
+    transition: all 0.3s;
+    cursor: pointer;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 2px solid black;
+}
+
+
+
+.card-image-container {
+    border-radius: 10px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    background-color: rgb(165, 165, 165);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.image-icon {
+    font-size: 40px;
+}
+
+.card-title {
+    margin: 0;
+    font-size: 17px;
+    font-weight: 600;
+    color: #000000;
+    cursor: default;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
+}
+
+.channelname{
+    display: flex;
+    color: #2e2e2e;
+    align-items: center;
+}
+
+.card-des {
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    line-clamp: 3;
+    margin: 0;
+    font-size: 13px;
+    
+    cursor: default;
+    margin-right: 3px;
+}
+
+.hide{
+    display: none;
+}
+
+i{
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .videolistings{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .card a{
+        text-decoration: none;
+    }
+}
