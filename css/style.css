@@ -35,10 +35,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background: black; */
 }
 
-/* From Uiverse.io by ErzenXz */
 .input {
     margin-top: 10px;
     width: 100%;
@@ -65,10 +63,6 @@ body{
     border: 2px solid rgb(0, 0, 0);
 }
 
-
-
-
-/* From Uiverse.io by akshat-patel28 */
 .videolistings{
     margin: 20px 30px;
     
@@ -76,11 +70,8 @@ body{
 
 .videobox{
     grid-gap: 10px;
-    /* align-items: center; */
-    /* justify-content: space-around; */
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 2px));
-    /* border: 2px solid rgb(255, 0, 0); */
 }
 
 .card {
@@ -156,6 +147,15 @@ img{
     margin-right: 3px;
 }
 
+.channelstats .dot{
+    background: #2e2e2e;
+    border-radius: 50%;
+    /* font-size: 15px; */
+    height: 3px;
+    width: 3px;
+    margin-right: 3px;
+}
+
 .hide{
     display: none;
 }
@@ -163,6 +163,8 @@ img{
 i{
     font-size: 12px;
 }
+
+/* meadia quary for mobile view  */
 
 @media only screen and (max-width: 600px) {
     .videolistings{
